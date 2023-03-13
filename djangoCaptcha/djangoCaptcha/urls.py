@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'api/captcha/', include('rest_captcha.urls')),
+    path('captcha/',include('captchaApp.urls')),
 ]
