@@ -20,7 +20,7 @@ then you will receive a Json as a response which has a structure like bellow:
 ```
 then by decodeing key of **captcha_image** in the response user can receive and show the image of captcha on it's interface.
 
-As a sample for approach of decodoing image, I put a file with the name of imageBase64Decoder.py that can be used for decoding and showing the image. it receives encoded_image as input and shows the picture as output.
+As a sample for approach of decoding image, I put a file with the name of **imageBase64Decoder.py** that can be used for decoding and showing the image. it receives encoded_image as input and shows the picture as output.
 
 
 ## **How to validate Captcha**
@@ -37,7 +37,13 @@ The parameters which you need to send are:
     "captcha_value":"answer of user to captcha"
 }
 ```
- If everithing goes fine you will receive **verified** however **notverified** will be shown if there is a problem.
+ If everything goes fine you will receive **verified** however **notverified** will be shown if there is a problem.
 
 
 Requirments of this service with its exact version are in requirements.txt :))
+
+***note that Django 4 is not compatible with libarary which is used in this project. To use a version of Django which works well you can install desired version of django. For example:
+```shell
+pip install django==3.2
+```
+***
